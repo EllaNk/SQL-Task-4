@@ -75,8 +75,25 @@ Calculate the average shipping day:
 SELECT AVG(Days_to_ship) AS average_shipping_time FROM your_table_name;
 
 Number of products:
-![]()
+
+![](Products_Number.png)
 
 The above screenshot shows the number of different products the company sells and the command used to achieve the result is as follows;
 
 _SELECT COUNT(distinct `Product Name`) As Number_of_products FROM superstore;_
+
+Top 5 customers:
+
+![]()
+
+The snapshot above shows the names and cities of the top 5 customers who contributed most to the overall profit of the store. And the syntax used to achieve this result is as follows;
+
+_Select `customer name`, city, sum(profit) from superstore_
+
+_group by `customer name`, city_
+
+_order by sum(profit) desc_
+
+_limit 5;_
+
+Total sales for each City
