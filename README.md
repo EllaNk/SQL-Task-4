@@ -45,10 +45,20 @@ _SELECT COUNT(DISTINCT region) FROM superstore;_
 
 Total profits generated in the West region:
 
+![](Total_Profit.png)
+
 The snapshot shows the total profits generated in the West region and the command used to acchieved this is as follows;
 
 _Select Sum(profit) As Total_Profit from superstore_
 
 _Where region = 'West';_
 
-Average profit
+Average profit:
+
+![]()
+
+The snapshot above shows the average profit generated from the company's product sales and the command used is as follows;
+
+_SELECT AVG(profit) AS Average_profit FROM superstore;_
+
+Average number of days
