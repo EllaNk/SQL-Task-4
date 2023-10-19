@@ -75,3 +75,8 @@ Calculate the average shipping day:
 SELECT AVG(Days_to_ship) AS average_shipping_time FROM your_table_name;
 
 Number of products:
+![]()
+
+The above screenshot shows the number of different products the company sells and the command used to achieve the result is as follows;
+
+_SELECT COUNT(distinct `Product Name`) As Number_of_products FROM superstore;_
