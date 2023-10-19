@@ -55,10 +55,23 @@ _Where region = 'West';_
 
 Average profit:
 
-![]()
+![](Average_Profit.png)
 
 The snapshot above shows the average profit generated from the company's product sales and the command used is as follows;
 
 _SELECT AVG(profit) AS Average_profit FROM superstore;_
 
-Average number of days
+Average number of days:
+
+The screenshot above displays the average number of days it takes for a customer to get their orders shipped and the command used is as follows;
+
+Add the new column "Days_to_ship" to your table:
+ALTER TABLE table_name ADD Days_to_ship INT;
+
+Update the new column with the calculated values for each row:
+UPDATE your_table_name SET Days_to_ship = DATEDIFF(ship_date, order_date);
+
+Calculate the average shipping day:
+SELECT AVG(Days_to_ship) AS average_shipping_time FROM your_table_name;
+
+Number of products:
