@@ -63,16 +63,6 @@ _SELECT AVG(profit) AS Average_profit FROM superstore;_
 
 Average number of days:
 
-The screenshot above displays the average number of days it takes for a customer to get their orders shipped and the command used is as follows;
-
-Add the new column "Days_to_ship" to your table:
-ALTER TABLE table_name ADD Days_to_ship INT;
-
-Update the new column with the calculated values for each row:
-UPDATE your_table_name SET Days_to_ship = DATEDIFF(ship_date, order_date);
-
-Calculate the average shipping day:
-SELECT AVG(Days_to_ship) AS average_shipping_time FROM your_table_name;
 
 Number of products:
 
@@ -98,6 +88,8 @@ _limit 5;_
 
 Total sales for each City greater than 20000:
 
+![](Cities.png)
+
 
 
 The snapshot above shows Show the names and cities of the 5 customers who contributed most to the overall profit of the store. And the syntax used to get the result is as follows;
@@ -109,9 +101,7 @@ _GROUP BY city_
 _HAVING SUM(sales) > 20000;_
 
 
-Conclusion:
-these tasks have provided a comprehensive exploration of the SALES table through SQL. The total number of rows in the table was determined, followed by identifying the number of regions in which the business operates. Total profit was calculated in the West region and the average profit from product sales. Additionally, the count of different products sold by the company was determined.
+## Conclusion:
 
-Furthermore, highlighting the top 5 customers with overall profit was analyzed.
-
-Lastly, sales data for cities with total sales exceeding $20,000 were filtered. These tasks collectively demonstrate the power of SQL in extracting valuable insights from a dataset for informed decision-making.
+These tasks have provided a comprehensive exploration of the superstore data set through SQL. The total number of rows in the table was determined, followed by identifying the number of regions in which the business operates. Total profit was calculated in the West region and the average profit from product saless, the count of different products sold by the company was determined and lastly, the top 5 customers with overall profit greater than 20000 was determined.
+These tasks collectively demonstrate the power of SQL in extracting valuable insights from a dataset for informed decision-making.
