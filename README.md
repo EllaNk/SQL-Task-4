@@ -26,7 +26,7 @@ One of the fundamental aspects of database management is the ability to effectiv
 Number of rows in the sales column from the sample_superstore:
 
 
-![](Sales_Row.png)
+![](Sales_Rows.png)
 
 
 From the snapshot above, it shows the total number of rows in the SALES table and the syntax used is as follows;
@@ -34,3 +34,9 @@ From the snapshot above, it shows the total number of rows in the SALES table an
 SELECT COUNT(*) FROM SALES;
 
 Total number of regions from the sample_superstore:
+
+![]()
+
+The snapshot above shows the number of regions in which the business is operating and the command used is as folllows;
+
+_SELECT COUNT(DISTINCT region) FROM superstore;_
