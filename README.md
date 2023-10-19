@@ -33,10 +33,22 @@ From the snapshot above, it shows the total number of rows in the SALES table an
 
 SELECT COUNT(*) FROM SALES;
 
+
 Total number of regions from the sample_superstore:
 
-![]()
+![](Distint_Region.png)
 
-The snapshot above shows the number of regions in which the business is operating and the command used is as folllows;
+The snapshot above shows the number of regions in which the business is operating on and the command used is as folllows;
 
 _SELECT COUNT(DISTINCT region) FROM superstore;_
+
+
+Total profits generated in the West region:
+
+The snapshot shows the total profits generated in the West region and the command used to acchieved this is as follows;
+
+_Select Sum(profit) As Total_Profit from superstore_
+
+_Where region = 'West';_
+
+Average profit
